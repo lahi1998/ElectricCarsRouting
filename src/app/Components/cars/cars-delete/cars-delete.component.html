@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>Car delete</h2>
+    <form [formGroup]="CarFormDelete" (ngSubmit)="onSubmit()">
+        <div class="formGroup">
+            <label for="Model">Model: </label>
+            <input type="text" id="Model" formControlName="Model" placeholder="Model"><br><br>
+            <input type="submit" value="Delete">
+        </div>
+    </form>
+    <br>
+</div>

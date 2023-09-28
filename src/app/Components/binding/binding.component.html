@@ -1,0 +1,14 @@
+<p>{{ a }}</p>
+
+<input type="text" (change)="textChanged()"><br><br>
+
+<form [formGroup]="TheForm" (ngSubmit)="onSubmit()">
+    <div class="formGroup">
+        <label for="inputText">Write something:</label>
+        <input type="text" id="inputText" formControlName="inputText" placeholder="input Text"><br>
+        <input type="submit" value="Submit">
+        <br><br>
+    </div>
+</form>
+
+<p>Your text is here: {{ inputText }}</p>

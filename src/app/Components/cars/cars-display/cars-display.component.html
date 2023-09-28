@@ -1,0 +1,22 @@
+<div class="container">
+    <h2>List of Cars</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Model</th>
+                <th>Amount</th>
+                <th>Change Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngIf="cars.length === 0">
+                <td colspan="3" class="no-data">No data available</td>
+            </tr>
+            <tr *ngFor="let car of cars">
+                <td>{{ car.model }}</td>
+                <td>{{ car.amount }}</td>
+                <td>{{ car.changeAmount }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
